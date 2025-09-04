@@ -1,9 +1,13 @@
 body,html {
     background-color: black;
     color: white;
-    text-align: center;
+
 }
 
+h1 {
+    text-align: center;   
+}
+    
 #wewkontener {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -33,3 +37,4 @@ a {
     color: green;
 
 }
+
