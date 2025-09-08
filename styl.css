@@ -1,7 +1,5 @@
 body,html {
     background-color: black;
-    background-size: 100%;
-    background-repeat: no-repeat;
     color: white;
 }
 
@@ -49,3 +47,4 @@ a:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
