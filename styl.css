@@ -37,8 +37,13 @@ h1 {
     transition: 0.5s
 }
 
+a {
+    text-decoration: none;
+    color: rgb(39, 131, 46);
+}
+
 a:hover {
-    background-color: rgb(20, 17, 184);
+    background-color: rgb(83, 124, 67);
     color: white;
     text-decoration: none;
     transform: scale(1.1);
