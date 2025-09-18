@@ -1,0 +1,33 @@
+body {
+    background-color: gray;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flaga {
+    width: 600px;
+    height: 405px;
+    box-shadow: 10px 10px 10px black;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+#flaga_gora,#flaga_dol {
+    width: 100%;
+    height: 33%;
+    background-color: rgb(116, 172, 223);
+}
+
+#flaga_srodek {
+    background-color: white;
+    width: 100%;
+    height: 34%;
+    text-align: center;
+}
+
+#slonce {
+    width: 22.5%;
+    height: 100%;
+}
