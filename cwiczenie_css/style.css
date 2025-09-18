@@ -1,0 +1,53 @@
+body,html {
+    background-color:darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+.t1 {
+  color: blue;
+}
+
+.card {
+  width: 650px;
+  height: 800px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#odp {
+    text-align: center;
+}
+
+#opis {
+  border: 2px solid #bbb;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: Arial;
+  font-size: 16px;
+  color: #333;
+  width: 90%;
+}
+
+#foto {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 95%;
+  height: 50%;
+}
+
+#foto:hover {
+  transform: scale(1.1);
+}
+
+#opis:hover {
+  background-color: #f0f0f0;
+}
