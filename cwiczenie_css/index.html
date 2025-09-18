@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ćwiczenie CSS</title>
 
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    .t2 {
+      color: green;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <h1 class="t1 t2" style="color: red;">Tytuł karty</h1>
+        <p id="opis">Paragraf</p>
+        <img id="foto" src="zdjecie.jfif" alt="Przykładowe zdjęcie">
+        <p>Tytuł Do zdjęcia</p>
+
+        <p id="odp">Kolor tytułu pochodzi ostatecznie z atrybutu style="color: red;", ponieważ w CSS obowiązuje zasada kaskadowości, 
+            która ustala priorytet reguł stylowania. W przypadku, gdy styl jest definiowany bezpośrednio w znaczniku HTML za pomocą atrybutu style, 
+            ma on wyższy priorytet niż reguły zdefiniowane w zewnętrznych plikach CSS czy nawet w sekcji (style) w nagłówku HTML. Oznacza to, że nawet jeśli kolor czcionki 
+            jest ustawiony na niebieski w klasie .t1 w pliku CSS, a na zielony w klasie .t2 w sekcji (style), 
+        to ostateczny kolor będzie czerwony, ponieważ styl w atrybucie style nadpisuje wszystkie inne definicje.
+        </p>
+    </div>
+
+</body>
+</html>
