@@ -3,9 +3,10 @@ img {
     height: 100px;
 }
 
-#flexbox ul.inline-list {
+ul {
     list-style: none;
-  }
+}
+
 #flexbox .thumbnail {
     display: flex;
     flex-wrap: wrap;
