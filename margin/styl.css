@@ -1,0 +1,68 @@
+body {
+    background-color: gray;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+#pierwszy,#drugi,#trzeci {
+    height: 200px;
+}
+
+#pierwszy {
+    background-color: chocolate;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#drugi {
+    background-color: cornflowerblue;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#trzeci {
+    background-color: green;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#z1,#z2,#z3,#z4 {
+    width: 200px;
+    height: 100px;
+}
+
+#z1 {
+    margin: 40px;
+    background-color: aqua;
+}
+
+#z2 {
+    margin: 20px 60px;
+    background-color: darkmagenta;
+}
+
+#z3 {
+    margin: 10px 50px 30px;
+    background-color: tomato;
+}
+
+#z4 {
+    margin: 5px 20px 10px 40px;
+    background-color: crimson;
+}
+
+#e1 {
+    background-color: blue;
+    width: 300px;
+    height: 100px;
+    margin-top: -30px;
+}
+
+#t1 {
+    width: 300px;
+    background-color: gold;
+    margin: auto;
+}
