@@ -1,0 +1,52 @@
+footer {
+    background-color: indigo;
+    height: 150px;
+}
+
+* {
+    font-family: Garamond, serif;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+#left,#right {
+    background-color: indigo;
+    height: 600px;
+    width: 20%;
+}
+
+#center {
+    background-color: black;
+    height: 600px;
+    overflow: visible;
+    width: 60%;
+}
+
+section {
+    width: 800px;
+}
+
+span {
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+input {
+    margin: 10px;
+    color: indigo;
+}
