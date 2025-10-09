@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+h3 {
+    color: coral;
+    font-size: 40px;
+}
+
 .element {
     width: 200px;
     height: 50px;
@@ -19,8 +24,6 @@ body {
 }
 
 #element1 {
-    width: 200px;
-    height: 100px;
     background-color: brown;
     padding-left: 10px;
     padding-right: 20px;
@@ -29,8 +32,21 @@ body {
 }
 
 #element2 {
-    width: 200px;
-    height: 100px;
     background-color: cornflowerblue;
-    padding: 20px 10px 25px 50px;
+    padding: 20px;
+}
+
+#element3 {
+    background-color: rgb(49, 182, 60);
+    padding: 20px 10px;
+}
+
+#element4 {
+    background-color: rgb(193, 196, 25);
+    padding: 30px 20px 10px;
+}
+
+#element5 {
+    background-color: rgb(211, 65, 39);
+    padding: 40px 30px 20px 10px;
 }
