@@ -1,0 +1,36 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+.element {
+    width: 200px;
+    height: 50px;
+}
+
+#ele1 {
+    background-color: rgb(103, 112, 21);
+    padding: 20px;
+}
+
+#ele2 {
+    background-color: darkgreen;
+    margin-top: 30px;
+}
+
+#element1 {
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    padding-top: 25px;
+}
+
+#element2 {
+    width: 200px;
+    height: 100px;
+    background-color: cornflowerblue;
+    padding: 20px 10px 25px 50px;
+}
