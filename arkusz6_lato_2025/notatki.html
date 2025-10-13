@@ -1,1 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer zadań</title>
 
+    <link rel="stylesheet" href="styl.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    
+    <aside>
+        <img src="obraz.jpg" alt="notatki">
+    </aside>
+
+    <section id="sekcja">
+        <header>
+            <h2>Moje zadania</h2>
+        </header>
+
+        <nav>
+            <input id="dodaj_zadanie" placeholder="Dodaj zadanie..." type="text">
+            <input type="submit" value="Dodaj" onclick="dodaj()">
+        </nav>
+
+        <main>
+            <ul id="lista">
+                <li id="pobierany">Wyprowadzić psa <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+                <li class="parzyste">Gimnastyka <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+                <li>Zakupy <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+                <li class="parzyste">Spacer z kumplem <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+                <li>Odrabianie lekcji z młodszą siostrą <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+                <li class="parzyste">Projekt na geografię <input type="submit" value="Wykonane" onclick="wykonaj(this)"></li>
+            </ul>
+        </main>
+
+        <footer>
+            <h3>Notaki: 1234567890</h3>
+        </footer>
+    </section>
+
+</body>
+</html>
