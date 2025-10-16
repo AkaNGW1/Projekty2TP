@@ -1,0 +1,56 @@
+#text-line1 {
+    text-decoration-line: line-through;
+}
+
+#text-line2 {
+    text-decoration-line: underline;
+}
+
+#text-line3 {
+    text-decoration-line: overline;
+}
+
+#text-color {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+#text-style1 {
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: red;
+}
+
+#text-style2 {
+    text-decoration-line: line-through;
+    text-decoration-style: double;
+    text-decoration-color: red;
+}
+
+#text-style3 {
+    text-decoration-line: line-through;
+    text-decoration-style: dotted;
+    text-decoration-color: red;
+}
+
+#text-style4 {
+    text-decoration-line: line-through;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+}
+
+#text-thick1 {
+    text-decoration-thickness: 20%;
+    text-decoration-line: overline;
+}
+
+#text-thick2 {
+    font-weight: bold;
+    text-decoration-thickness: from-font;
+    text-decoration-line: overline;
+}
+
+#text-thick3 {
+    text-decoration-thickness: auto;
+    text-decoration-line: overline;
+}
