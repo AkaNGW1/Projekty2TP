@@ -1,0 +1,103 @@
+header {
+    background-color: purple;
+    color: white;
+}
+
+.zadanie {
+    font-size: 30px;
+}
+
+.podpis {
+    font-size: 20px;
+}
+
+main {
+    background-color: aqua;
+    color: black;
+}
+
+footer {
+    background-color: green;
+    color: white;
+}
+
+#div1 {
+    width: 300px;
+    height: 200px;
+    background-color:coral;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(196, 90, 52, 0.5);
+}
+
+#div2 {
+    width: 300px;
+    height: 200px;
+    background-color:rgb(245, 65, 0);
+    font-size: 40px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.hero {
+    height: 60vh;
+    width: 300px;
+    background-image: url(pobrane.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+}
+
+.box1 {
+    width: 300px;
+    height: 300px;
+    background-image: url(krajobraz.jpg);
+    background-size: 50%;
+    border: 3px solid red;
+    background-repeat: no-repeat;
+}
+
+.box2 {
+    width: 300px;
+    height: 300px;
+    background-image: url(krajobraz.jpg);
+    background-size: 50%;
+    border: 3px solid red;
+    background-repeat: repeat-x;
+}
+
+.box3 {
+    width: 300px;
+    height: 300px;
+    background-image: url(krajobraz.jpg);
+    background-size: 50%;
+    border: 3px solid red;
+    background-repeat: repeat;
+}
+
+#zad5-grid {
+    width: 450px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    border: 2px solid blue;
+}
+
+.pos1,.pos2,.pos3,.pos4,.pos5,.pos6,.pos7,.pos8,.pos9 {
+    background-image: url(pobrane.jpg);
+    background-size: cover;
+    border: 1px solid red;
+}
+
+.pos1 { background-position: left top; }
+.pos2 { background-position: center top; }
+.pos3 { background-position: right top; }
+.pos4 { background-position: left center; }
+.pos5 { background-position: center center; }
+.pos6 { background-position: right center; }
+.pos7 { background-position: left bottom; }
+.pos8 { background-position: center bottom; }
+.pos9 { background-position: right bottom; }
