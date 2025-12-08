@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    background-color: cornflowerblue;
+    height: 200px;
+}
+
+nav {
+    width: 40%;
+    background-color: forestgreen;
+    float: left;
+}
+
+main {
+    width: 60%;
+    background-color: darkviolet;
+    float: left;
+}
+
+nav,main {
+    height: 525px;
+}
+
+.sect {
+    background-color: darkolivegreen;
+    width: 85%;
+    height: 100px;
+    border: 1px solid white;
+    margin: 0 auto;
+}
+
+.sect1 {
+    background-color: darkolivegreen;
+    width: 85%;
+    height: 100px;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+#section1 {
+    margin-top: 12.5%;
+}
+
+#section2 {
+    margin-top: 8.25%;
+}
+
+
+
+footer {
+    background-color: coral;
+    height: 200px;
+    clear: both;
+}
+
