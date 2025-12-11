@@ -1,0 +1,37 @@
+* {
+    font-family: Helvetica;
+}
+
+body {
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#lewy_gorny {
+    width: 100%;
+    height: 400px;
+}
+
+#lewy_dolny {
+    background-color: darksalmon;
+    width: 100%;
+    height: 100px;
+}
+
+aside {
+    background-color: darksalmon;
+    width: 70%;
+    height: 537px;
+    overflow: auto;
+    float: left;
+}
+
+img {
+    width: 100%;
+    height: 270px;
+}
+
+#lewa {
+    width: 30%;
+    float: left;
+}
