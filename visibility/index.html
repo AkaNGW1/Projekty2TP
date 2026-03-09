@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
 
+    <style>
+        body {display: flex}
+
+        main {width: 70%}
+
+        aside {width: 30%}
+
+        #div1,#div2,#div3 {width: 50px; height: 50px;visibility:hidden;}
+
+        #div1 {background-color: red;}
+        #div2 {background-color: green;}
+        #div3 {background-color: blue;}
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </main>
+
+    <aside>
+        <input type="submit" value="Pokaż div 1" onclick="pokazDiv('div1')">
+        <input type="submit" value="Pokaż div 2" onclick="pokazDiv('div2')">
+        <input type="submit" value="Pokaż div 3" onclick="pokazDiv('div3')">
+    </aside>
+
+    <script>
+        function pokazDiv(div) {
+            let element = document.getElementById(div);
+
+            element.style.visibility = "visible";
+
+        }
+
+    </script>
+    
+</body>
+</html>
