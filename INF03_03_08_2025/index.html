@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Smoki</title>
+
+    <link rel="stylesheet" href="styl.css">
+
+</head>
+<body>
+
+    <header>
+        <h2>Poznaj smoki!</h2>
+    </header>
+
+    <section id="sekcje">
+        <nav>
+            <section id="blok1" onclick="wyswietl1()">Baza</section>
+            <section id="blok2" onclick="wyswietl2()">Opisy</section>
+            <section id="blok3" onclick="wyswietl3()">Galeria</section>
+        </nav>
+
+        <main>
+            <section id="sekcja1">
+                <h3>Baza smoków</h3>
+                <form action="">
+                    <select name="" id=""></select>
+                    <input type="submit" value="Szukaj">
+                </form>
+                <table>
+                    <tr>
+                        <th>Nazwa</th>
+                        <th>Długość</th>
+                        <th>Szerokość</th>
+                    </tr>
+                </table>
+            </section>
+            <section id="sekcja2">
+                <h3>Opisy smoków</h3>
+                <dl>
+                    <dt>Smok czerwony</dt>
+                    <dd>Pochodzi z Chin. Ma 1000 lat. Żywi się mniejszymi zwierzętami. Posiada łuski cenne na rynkach wschodnich do wyrabiania lekarstw. Jest dziki i groźny.</dd>
+                </dl>
+                <dl>
+                    <dt>Smok zielony</dt>
+                    <dd>Pochodzi z Bułgarii. Ma 10000 lat. Żywi się mniejszymi zwierzętami, ale tylko w kolorze zielonym. Jest kosmaty. Z sierści zgubionej przez niego, tka się najdroższe materiały.</dd>
+                </dl>
+                <dl>
+                    <dt>Smok niebieski</dt>
+                    <dd>Pochodzi z Francji. Ma 100 lat. Żywi się owocami morza. Jest natchnieniem dla najlepszych malarzy. Często im pozuje. Smok ten jest przyjacielem ludzi i czasami im pomaga. Jest jednak próżny i nie lubi się przepracowywać.</dd>
+                </dl>
+            </section>
+            <section id="sekcja3">
+                <h3>Galeria</h3>
+                <img src="smok1.JPG" alt="Smok czerwony">
+                <img src="smok2.JPG" alt="Smok wielki">
+                <img src="smok3.JPG" alt="Skrzydlaty łaciaty">
+            </section>
+        </main>
+    </section>
+    
+    <footer>
+        <p>Stronę wykonał: Wojtek Garbarz</p>
+    </footer>
+
+    <script>
+        function wyswietl1() {
+            let blok1 = document.getElementById("blok1");
+            let blok2 = document.getElementById("blok2");
+            let blok3 = document.getElementById("blok3");
+            let sekcja1 = document.getElementById("sekcja1");
+            let sekcja2 = document.getElementById("sekcja2");
+            let sekcja3 = document.getElementById("sekcja3");
+
+            blok1.style.backgroundColor = "MistyRose";
+            blok2.style.backgroundColor = "#FFAEA5";
+            blok3.style.backgroundColor = "#FFAEA5";
+
+            sekcja1.style.display = "block";
+            sekcja2.style.display = "none";
+            sekcja3.style.display = "none";
+        }
+
+        function wyswietl2() {
+            let blok1 = document.getElementById("blok1");
+            let blok2 = document.getElementById("blok2");
+            let blok3 = document.getElementById("blok3");
+            let sekcja1 = document.getElementById("sekcja1");
+            let sekcja2 = document.getElementById("sekcja2");
+            let sekcja3 = document.getElementById("sekcja3");
+
+            blok1.style.backgroundColor = "#FFAEA5";
+            blok2.style.backgroundColor = "MistyRose";
+            blok3.style.backgroundColor = "#FFAEA5";
+
+            sekcja1.style.display = "none";
+            sekcja2.style.display = "block";
+            sekcja3.style.display = "none";
+        }
+
+        function wyswietl3() {
+            let blok1 = document.getElementById("blok1");
+            let blok2 = document.getElementById("blok2");
+            let blok3 = document.getElementById("blok3");
+            let sekcja1 = document.getElementById("sekcja1");
+            let sekcja2 = document.getElementById("sekcja2");
+            let sekcja3 = document.getElementById("sekcja3");
+
+            blok1.style.backgroundColor = "#FFAEA5";
+            blok2.style.backgroundColor = "#FFAEA5";
+            blok3.style.backgroundColor = "MistyRose";
+
+            sekcja1.style.display = "none";
+            sekcja2.style.display = "none";
+            sekcja3.style.display = "block";
+        }
+    </script>
+    
+</body>
+</html>
