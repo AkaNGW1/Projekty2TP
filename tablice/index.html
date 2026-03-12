@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        * {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        input[type="submit"] {
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+
+    <input type="submit" value="Pokaż tablicę" onclick="pokaz_tablice()"><br>
+
+    <div id="pokaz_wynik"></div><br>
+
+    <input type="submit" value="Push (koniec)" onclick="push()"><input type="text" id="push_pole"><br><br>
+
+    <input type="submit" value="Pop (usuń ostani element)" onclick="pop()"><br><br>
+
+    <input type="submit" value="unshift (początek)" onclick="unshift()"><input type="text" id="unshift_pole"><br><br>
+
+    <input type="submit" value="Shift (usuń pierwszy element)" onclick="shift()"><br><br>
+
+    <input type="submit" value="Sprawdź czy jest:" onclick="sprawdz_czy_jest()"><input type="text" id="sprawdz_pole">
+
+    <div id="sprawdz_wynik"></div><br>
+
+    <input type="submit" value="Sortuj" onclick="sort()"><br><br>
+
+    <input type="submit" value="Pierwszy element" onclick="pierwsza_pozycja()">
+    
+    <div id="pierwszy_wynik"></div><br>
+
+    <input type="submit" value="Liczba elementów" onclick="elementy()">
+    
+    <div id="elementy_wynik"></div><br>
+
+    <input type="submit" value="Pierwszy oraz drugi element" onclick="pierwsza_i_druga_pozycja()">
+    
+    <div id="pierwsza_i_druga_wynik"></div><br>
+
+    <input type="submit" value="Lista elementów tablicy" onclick="wypisz()">
+
+    <div id="wypisz_wynik"></div><br>
+
+    
+
+    <script>
+        let zabawki = ["klocki","puzzle","piłka","auto","plansza"]
+
+        function pokaz_tablice() {
+            let pokaz_wynik = document.getElementById("pokaz_wynik")
+            pokaz_wynik.innerHTML = "Tablica: "+zabawki
+        }   
+
+        function push() {
+            let pole = document.getElementById("push_pole").value
+
+            zabawki.push(pole)
+        }
+
+        function pop() {
+            zabawki.pop()
+        }
+
+        function unshift() {
+            let pole = document.getElementById("unshift_pole").value
+
+            zabawki.unshift(pole)
+        }
+
+        function shift() {
+            zabawki.shift()
+        }
+
+        function sprawdz_czy_jest() {
+            let sprawdz_pole = document.getElementById("sprawdz_pole").value;
+            let sprawdz_wynik = document.getElementById("sprawdz_wynik");
+
+            if (zabawki.includes(sprawdz_pole)) {
+                sprawdz_wynik.innerHTML = "Element: "+sprawdz_pole+", znajduje się w tablicy";
+            }
+            else {
+                sprawdz_wynik.innerHTML = "Brak takiego stringu w tablicy";
+            }
+
+        }
+
+        function sort() {
+            zabawki.sort();
+        }
+
+        function pierwsza_pozycja() {
+            let wynik = document.getElementById("pierwszy_wynik")
+
+            wynik.innerHTML = zabawki[0];
+        }
+
+        function elementy() {
+            let wynik = document.getElementById("elementy_wynik")
+            let count = 0;
+
+            for (let i=0;i < zabawki.length;i++) {
+                count += 1;
+            }
+
+            wynik.innerHTML = "Liczba elementów: "+count;
+
+        }
+
+        function pierwsza_i_druga_pozycja() {
+            let wynik = document.getElementById("pierwsza_i_druga_wynik")
+
+            wynik.innerHTML = "Pierwszy: "+zabawki[0]+"<br>"+" Drugi: "+zabawki[1];
+        }
+
+        function wypisz()  {
+            let wynik = document.getElementById("wypisz_wynik")
+
+            wynik.innerHTML = "";
+
+            for (let i = 0; i < zabawki.length; i++) {
+
+                wynik.innerHTML += (i+1)+". "+zabawki[i]+"<br>";
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
