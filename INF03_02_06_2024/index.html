@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat</title>
+
+    <link rel="stylesheet" href="styl.css">
+
+</head>
+<body>
+    
+    <section id="sekcje_gora">
+        <section id="lewy">
+            <header>
+                <h2>Chat</h2>
+            </header>
+
+            <main>
+                <section id="blok_chat">
+
+                    <section id="blok_jolanta">
+                        <img src="Jolka.jpg" alt="Jolanta Nowak">
+                        <p>Cześć idziesz jutro do kina?</p>
+                    </section>
+
+                    <section id="blok_krzysztof">
+                        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+                        <p>Tak! A ty?</p>
+                    </section>
+
+
+                </section>
+
+                <label for="wiadomosc">Wpisz wiadomość:</label>
+                <input type="text" name="wiadomosc" id="wiadomosc">
+                <input type="submit" value="Wyślij" onclick="wyslij()"><br>
+                <input type="submit" value="Generuj losową odpowiedź" onclick="wygeneruj()">
+            </main>
+        </section>
+
+        <aside>
+            <h3>Chaty</h3>
+            <ul>
+                <li>Ogólny</li>
+                <li>
+                    Tematyczne
+                    <ol>
+                        <li>Turystyczny</li>
+                        <li>Żeglarski</li>
+                        <li>Filatelistyczny</li>
+                        <li>Hodowla zwierzątek domowych</li>
+                    </ol>
+                </li>
+            </ul>
+            <h3>Uczestnicy</h3>
+            <p>Jolanta Nowak</p>
+            <img src="Jolka.jpg" alt="Jolanta Nowak">
+            <p>Krzysztof Łukasiński</p>
+            <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+        </aside>
+    </section>
+
+    <footer>
+        <h5>Chat wykonał: Wojtek Garbarz</h5>
+    </footer>
+
+    <script>
+        let nowy = 0
+
+        function wyslij() {
+            let bloki = document.getElementById("blok_chat");
+            let blok = document.getElementById("blok_jolanta");
+
+            let nowyBlok = blok.cloneNode(true);
+            let text = nowyBlok.querySelector("p");
+
+            let wybranaWypowiedz = document.getElementById("wiadomosc").value;
+
+            text.innerHTML = wybranaWypowiedz;
+
+            bloki.appendChild(nowyBlok);
+
+        }
+
+        function wygeneruj() {
+            const wypowiedzi = ["Świetnie!","Kto gra główną rolę?","Lubisz filmy Tego reżysera?","Będę 10 minut wcześniej","Może kupimy sobie popcorn?","Ja wolę Colę","Zaproszę jeszcze Grześka","Tydzień temu też byłem w kinie na Diunie","Ja funduję bilety"];
+            let bloki = document.getElementById("blok_chat");
+            let blok = document.getElementById("blok_krzysztof");
+
+            let nowyBlok = blok.cloneNode(true);
+            let text = nowyBlok.querySelector("p");
+
+            let liczba = Math.floor(Math.random() * wypowiedzi.length);
+            let wybranaWypowiedz = wypowiedzi[liczba];
+
+            text.innerHTML = wybranaWypowiedz;
+
+            bloki.appendChild(nowyBlok);
+
+        }
+
+    </script>
+
+</body>
+</html>
